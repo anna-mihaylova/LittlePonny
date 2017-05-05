@@ -1,0 +1,357 @@
+body {
+    font-family: 'pleasantly_plumpnormal', Arial, sans-serif;
+    font-size: 1.27vw;
+    line-height: 20px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background: #050608;
+    color: #c4eaf7;
+}
+
+main, section, div, p {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="button"] {
+    height: 7%;
+    position: absolute;
+    left: 0.1%;
+    font-family: 'pleasantly_plumpnormal', Arial, sans-serif;
+    background-color: #24156d;
+    color: #ad7bbe;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 11;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #fff;
+}
+
+input[type="button"]:hover {
+    background-color: #ad7bbe;
+    color: #24156d;
+}
+
+input[type="button"]:active {
+    background-color: #fff;
+    box-shadow: 0 1px #fff;
+    transform: translateY(2px);
+}
+
+section#play {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    background-image: url('../img/start.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+
+input#playButton {
+    width: 8%;
+    bottom: 10.5%;
+}
+
+input#howToPlayButton {
+    width: 20%;
+    bottom: 2%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../img/background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: url('../img/ponny-icon.png'), auto;
+    z-index: 1;
+}
+
+.lose.background {
+    background-image: url('../img/lose-background.gif');
+    z-index: 2;
+}
+
+.win.background {
+    background-image: url('../img/background-win.png');
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    position: relative;
+    z-index: 3;
+}
+
+.div {
+    width: 18%;
+    height: 150%;
+    position: absolute;
+    right: 1%;
+    background-color: #24156d;
+    border-radius: 15px;
+    z-index: 4;
+}
+
+.img, h4 {
+    display: inline;
+    position: absolute;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.div.hits {
+    background-position: -280px -70px;
+    background-size: 290% 550%;
+    top: 20%;
+}
+
+.img.hits {
+    top: 13%;
+    left: 4%;
+    background: url('../img/coins.png');
+    background-position: -7px -3px;
+    background-size: 500% 100%;
+}
+
+h4.hits {
+    top: 32%;
+    left: 24%;
+}
+
+h4.hits.value {
+    top: 28%;
+    left: 72%;
+    font-size: 1.5em;
+}
+
+.div.balls {
+    background-position: -280px -70px;
+    background-size: 290% 550%;
+    top: 200%;
+    position: absolute;
+}
+
+.img.balls {
+    top: 1%;
+    left: 4%;
+    background: url('../img/snow-ball.png');
+    background-position: -7px -5px;
+    background-size: 500% 500%;
+}
+
+h4.balls {
+    top: 32%;
+    left: 26%;
+}
+
+h4.balls.value {
+    top: 28%;
+    left: 72%;
+    font-size: 1.5em;
+}
+
+.ball {
+    width: 3%;
+    height: 9%;
+    position: absolute;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.first.ball {
+    bottom: -1%;
+    background: url('../img/first.png');
+    background-size: 95% 98%;
+}
+
+.second.ball {
+    position: absolute;
+    right: 0px;
+    bottom: 9%;
+    background: url('../img/second.png');
+    background-size: 95% 98%;
+}
+
+.third.ball {
+    position: absolute;
+    right: 0px;
+    bottom: 19%;
+    background: url('../img/third.png');
+    background-size: 95% 100%;
+}
+
+.fourth.ball {
+    bottom: 30%;
+    background: url('../img/fourth.png');
+    background-size: 95% 95%;
+}
+
+.fifth.ball {
+    bottom: 40%;
+    background: url('../img/fifth.png');
+    background-size: 95% 95%;
+}
+
+.sixth.ball {
+    bottom: 49%;
+    background: url('../img/sixth.png');
+    background-size: 95% 95%;
+}
+
+.end.ball {
+    width: 4%;
+    height: 12%;
+    left: 0%;
+    background: url('../img/end.png');
+    background-size: 100% 95%;
+    z-index: 6;
+}
+
+.ponny {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 3;
+}
+
+.up.ponny {
+    width: 35%;
+    height: 55%;
+    top: 10%;
+    background: url('../img/up.png');
+    background-size: 100% 100%;
+}
+
+.middle.ponny {
+    width: 40%;
+    height: 35%;
+    bottom: -1%;
+    background: url('../img/middle.png');
+    background-size: 100% 100%;
+}
+
+.down.ponny {
+    width: 50%;
+    height: 19%;
+    bottom: -3%;
+    background: url('../img/down.png');
+    background-size: 100% 100%;
+}
+
+.win.ponny {
+    width: 50%;
+    height: 85%;
+    left: 5%;
+    bottom: 0%;
+    background: url('../img/win.gif');
+    background-size: 100% 100%;
+}
+
+.lose.ponny {
+    width: 50%;
+    height: 85%;
+    left: 15%;
+    bottom: -8%;
+    background: url('../img/lose1.gif');
+    background-size: 100% 100%;
+}
+
+.walk.ponny {
+    width: 50%;
+    height: 85%;
+    bottom: -10%;
+    left: -2%;
+    background: url('../img/walk.gif');
+    background-size: 100% 100%;
+}
+
+div#alert {
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    margin-top: 23%;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #7263a4;
+    z-index: 20;
+}
+
+p#rules {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 2%;
+    background-color: #ad7bbe;
+    color: #24156d;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-overflow: clip;
+    border: 1px solid #7263a4;
+    border-radius: 15px;
+    cursor: url('../img/delete-icon.png'), auto;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px) {
+   input[type="button"] {
+       font-size: 3em;
+   }
+
+   input#howToPlayButton {
+       width: 50%;
+   }
+
+   input#playButton {
+       width: 20%;
+   }
+
+   .div {
+       width: 31%;
+       height: 150%;
+   }
+
+   h4 {
+       font-size: 2em;
+   }
+
+   h4.hits, h4.balls {
+       left: 27%;
+   }
+
+   h4.hits.value,  h4.balls.value {
+       left: 77%;
+       font-size: 2em;
+   }
+}
